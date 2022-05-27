@@ -1,3 +1,25 @@
-    body {
-        background-color: wheat;
-    }
+body {
+    font-family: 'Tiro Bangla', serif;
+    padding: 30px 50px;
+}
+
+header {
+    text-align: left;
+    border-image-width: auto;
+}
+
+main {
+    text-align: left;
+}
+
+footer {
+    text-align: left;
+}
+
+.list {
+    text-align: left;
+}
+
+.title {
+    text-align: left;
+}

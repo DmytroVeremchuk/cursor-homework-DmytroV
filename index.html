@@ -6,47 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
-    <h2>Список основних команд</h2>
-    <div>
-        <div>
-            <li>git config --global user.name blabla</li>
-            <li>git config --global user.email blabal@bla</li>
+    <section>
+        <header>
+            <h1>Human mission to Mars</h1>
+            <hr>
             <p>
-                Перше, що вам слід зробити після встановлення Git — вказати ваше ім'я та адресу електронної пошти. Це важливо, тому що кожен коміт у Git містить цю інформацію, і вона включена в коміти, що передаються вами, і не може бути далі змінено. Знову ж таки, якщо
-                вказано опцію --global, то ці налаштування достатньо зробити лише один раз, оскільки в цьому випадку Git використовуватиме ці дані для всього, що ви робите в цій системі.
+                A human mission to Mars has been the subject of science fiction since the 1880s, and of aerospace engineering and scientific proposals since the late 1940s. Plans include landing on Mars for exploration at a minimum, with some considering exploring its
+                moons Phobos and Deimos. Longterm proposals have included sending settlers and starting terraforming of the planet.
             </p>
-        </div>
-        <li>git init - "Init" - це скорочення від "initialize". Це означає, що коли Ви пишете "git init", Git "включається" або "запускається" для цього репозиторію.</li>
-        <li>git status - Команда git status відображає стан робочого каталогу та розділу проіндексованих файлів. З її допомогою можна перевірити індексацію змін та побачити файли, які не відстежуються Git</li>
-        <li>git add - Це перша команда в ланцюжку операцій, що наказує Git «зберегти» знімок поточного стану проекту історії коммітів. Коли git add використовується як окрема команда, вона переносить очікуючі зміни з робочого каталогу розділ проіндексованих
-            файлів
-        </li>
-        <li>git commit - Це операція, яка бере всі підготовлені зміни та відправляє їх у репозиторій як єдине ціле</li>
-        <li>git log - За умовчанням (без аргументів) git log перераховує комміти, зроблені в репозиторії у зворотному напрямку хронологічному порядку – останні коміти знаходяться вгорі</li>
-        <li>git checkout - Команда git checkout дозволяє переміщатися між гілками, створеними командою git branch. При перемиканні гілки відбувається оновлення файлів у робочому каталозі відповідно до версії, що зберігається в цій гілці, а Git починає записувати
-            нові комміти в цій гілці</li>
-        <li>git branch - Це команда для управління гілками у репозиторії Git. Гілка в Git'і - це просто "ковзкий" покажчик на один із коммітів. Коли ви створюєте нові комміти, вказівник гілки автоматично зсувається вперед, знову створеному комітету</li>
-        <li>git push - Команда git push використовується для вивантаження вмісту локального репозиторію у віддалений репозиторій. Вона дозволяє передати коміти з локального репозиторію у віддалений</li>
-        <li>git pull - Команда git pull використовується для вилучення та завантаження вмісту з віддаленого репозиторію та негайного оновлення локального репозиторію цим вмістом. Злиття видалених вищих змін у локальний репозиторій - це звичайне завдання робочого
-            процесу, що виникає при спільній роботі на основі системи Git</li>
-        <li>git merge - Злиття використовується в Git, щоб зібрати воєдино розгалужену історію. Команда git merge виконує злиття окремих напрямів розробки, створених за допомогою команди git branch в єдину гілку</li>
-        <li>git clone - Це утиліта командного рядка Git для вибору існуючого репозиторію та створення його клону, тобто копії</li>
-    </div>
-    <div>
-        <h2>Advanced</h2>
-        <li>git revert - Це операція для безпечного скасування змін, дія якої спрямована у майбутнє. Для відкату змін команда не видаляє з історії комміти чи батьківські елементи, а створює новий коміт зі скасуванням потрібних дій
-        </li>
-        <li>git reset - Це команда, яка використовується для скасування локальних змін у репозиторії Git</li>
-        <li>git rebase - Ще один спосіб перенести зміни з однієї гілки до іншої. Rebase стискає всі зміни в один патч. Потім він інтегрує патч у цільову гілку</li>
-        <li>git cherry-pick - Команда git cherry-pick бере зміни, що вносяться одним коммітом, і намагається повторно застосувати їх у вигляді нового комміту у поточній гілці. Ця можливість корисна в ситуації, коли потрібно забрати парочку коммітів з інший
-            гілки, а чи не зливати гілку цілком із усіма внесеними у ній змінами.</li>
-        <li>git stash - Команда git stash дозволяє на якийсь час «здати в архів» (або відкласти) зміни, зроблені в робочій копії, щоб ви могли застосувати їх пізніше</li>
-    </div>
+            <br>
+            <img class="image" src="./HW2/unnamed.jpg" alt="user name">
+        </header>
+    </section>
+
+
+    <main>
+        <article>
+            <h2 class="artical-title title">Exploration of Mars</h2>
+            <p>
+                The exploration of Mars has been a goal of national space programs for decades. Conceptual work for missions that would involve human explorers has been ongoing since the 1950s, with planned missions typically being stated as taking place anywhere between
+                10 and 30 years from the time they are drafted.The list of crewed Mars mission plans shows the various mission proposals that have been put forth by multiple organizations and space agencies in this field of space exploration. Plans have
+                varied from scientific expeditions, in which a small group (between two and eight astronauts) would visit Mars for a period of a few weeks or year, to a continuous presence (e.g. through research stations, colonization or other continuous
+                humanization).[citation needed] Virtual visits to Mars, using haptic technologies, have also been proposed.[ In the 2010s, numerous US, European, and Asian agencies were developing proposals for human missions to Mars.[citation needed]
+                In fiction, Mars is a frequent target of exploration and settlement in books, graphic novels, and films.
+
+
+            </p>
+        </article>
+    </main>
+    <footer>
+        <h2 class="title">Mars shuttles</h2>
+        <p> There are shuttles that was on Mars</p>
+        <ul class="list">
+            <li>Mars 3</li>
+            <li>Viking 1 and Viking 2</li>
+            <li>Mars Pathfinder and its Sojourner rover</li>
+            <li>Spirit and Opportunity rovers</li>
+            <li>Phoenix lande</li>
+            <li>Curiosity rover</li>
+            <li>InSight lander</li>
+            <li>Beagle2</li>
+            <li>Perseverance rover
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
