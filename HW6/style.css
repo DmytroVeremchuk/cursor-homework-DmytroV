@@ -282,8 +282,19 @@ p {
 }
 
 .section5 {
-    background: #E5E5E5;
+    background: #fff;
     padding: 100px 240px;
+}
+
+.nav {
+    margin: 10px;
+    line-height: 100px;
+}
+
+.section5 .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section5 .head,
@@ -296,21 +307,79 @@ p {
 .section5 .head .btn1 {
     background: #F063B8;
     color: #FFFFFF;
+    display: inline-block;
 }
 
 .section5 .head .btn2 {
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     color: #212353;
+    display: inline-block;
 }
 
-.section5 .title {
-    width: 584px;
-    height: 101px;
-    left: 240px;
-    top: 3750px;
+.section5 .info {
+    max-width: 370px;
+}
+
+.about {
+    max-width: 170px;
+}
+
+.help {
+    max-width: 170px;
+}
+
+.sm {
+    max-width: 180px;
+}
+
+.section5 .head {
+    margin-bottom: 150px;
+}
+
+.section5 .info .data {
+    margin-bottom: 60px;
+}
+
+.section5 .info .data img {
+    vertical-align: middle;
+}
+
+.section5 .info .data h3 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about ul {
+    padding: 0;
+    list-style: none;
+}
+
+.help ul {
+    padding: 0;
+    list-style: none;
+}
+
+.title h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #212353;
 }
 
 .section5 .company {
     margin-bottom: 118px;
+}
+
+.house p {
+    width: 360px;
+}
+
+.png {
+    width: 60px;
+    height: 60px;
 }
