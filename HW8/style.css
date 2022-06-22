@@ -1,0 +1,50 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 20px;
+    width: 250px;
+    margin: auto;
+}
+
+.wrapper>div {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.wrapper>div:nth-last-child(-n+4) {
+    background-color: rgb(18, 132, 213);
+}
+
+.wrapper>div:nth-child(4n+3) {
+    background-color: rgb(255, 0, 0);
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn a {
+    padding: 20px 60px;
+    font-weight: 900;
+    color: white;
+    font-size: 26px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background-color: rgba(68, 211, 168, 1);
+    transition: all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    width: 200px;
+    height: 8px;
+    display: inline-block;
+    border-bottom: 2px solid rgba(196, 196, 196, 1);
+    border-top: 2px solid rgba(196, 196, 196, 1);
+}
