@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(240, 240, 166);
+}
+
+.jedi {
+    width: 50px;
+    margin: auto;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.jedi span {
+    display: block;
+    height: 3px;
+    background: black;
+    margin: 3px 0;
+    box-sizing: border-box;
+    position: relative;
+    transition: 1s;
+}
+
+.jedi span::before,
+.jedi span::after {
+    transition: 1s;
+}
+
+
+/* .jedi span:nth-child(1)::before {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(1)::after {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(2)::before {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(2)::after {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(3)::before {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(3)::after {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+} */
+
+.jedi span:nth-child(1)::before {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(1)::after {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(2)::before {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(2)::after {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(3)::before {
+    content: " ";
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    left: 0;
+    position: absolute;
+}
+
+.jedi span:nth-child(3)::after {
+    content: " ";
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    background: #999;
+    right: 0;
+    position: absolute;
+}
+
+
+/* перебиваємо стилі */
+
+.jedi:hover span:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.jedi:hover span:nth-child(1)::before {
+    background-color: #333;
+}
+
+.jedi:hover span:nth-child(1)::after {
+    background-color: #333;
+}
+
+.jedi:hover span:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.jedi:hover span:nth-child(2)::before {
+    background-color: rgb(233, 201, 201);
+}
+
+.jedi:hover span:nth-child(2)::after {
+    background-color: rgb(233, 201, 201);
+}
+
+.jedi:hover span:nth-child(3) {
+    transform: rotate(-30deg);
+}
+
+.jedi:hover span:nth-child(3)::before {
+    background-color: rgb(206, 233, 201);
+}
+
+.jedi:hover span:nth-child(3)::after {
+    background-color: rgb(206, 233, 201);
+}
+
+.pendulum {
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    width: 18em;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.pendulum span {
+    position: relative;
+    height: 10em;
+    transform-origin: top;
+}
+
+.pendulum span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    left: -1.5em;
+}
+
+.pendulum span:first-child {
+    animation: move 1s ease-in infinite;
+    --direction: 1;
+}
+
+.pendulum span:last-child {
+    animation: move 1s ease-out infinite;
+    animation-delay: 0.5s;
+    --direction: -1;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(calc(60deg * var(--direction)));
+    }
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.pendulum span:first-child::before {
+    background: linear-gradient(90deg, rgba(0, 8, 91, 1) 0%, rgba(53, 9, 81, 1) 100%);
+}
+
+.pendulum span:nth-child(2)::before {
+    background: linear-gradient(90deg, rgba(53, 9, 81, 1) 0%, rgba(95, 10, 73, 1) 100%);
+}
+
+.pendulum span:nth-child(3)::before {
+    background: linear-gradient(90deg, rgba(95, 10, 73, 1) 0%, rgba(125, 11, 67, 1) 100%);
+}
+
+.pendulum span:nth-child(4)::before {
+    background: linear-gradient(90deg, rgba(125, 11, 67, 1) 0%, rgba(156, 8, 51, 1) 100%);
+}
+
+.pendulum span:nth-child(5)::before {
+    background-color: rgb(125, 21, 31);
+    background: linear-gradient(90deg, rgba(156, 8, 51, 1) 0%, rgba(192, 5, 32, 1) 100%);
+}
+
+.pendulum span:nth-child(6)::before {
+    background-color: rgb(125, 21, 31);
+    background: linear-gradient(90deg, rgba(192, 5, 32, 1) 0%, rgba(224, 3, 16, 1) 100%);
+}
+
+.pendulum span:nth-child(7)::before {
+    background-color: rgb(125, 21, 31);
+    background: linear-gradient(90deg, rgba(224, 3, 16, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
