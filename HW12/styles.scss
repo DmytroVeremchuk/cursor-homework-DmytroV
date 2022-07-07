@@ -1,0 +1,266 @@
+@import 'variables';
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background: $btnColorBlack;
+    border-radius: 2px;
+    color: $btnColorWhite;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    min-width: 160px;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    &.white {
+        background: $btnColorWhite;
+        color: $btnColorBlack;
+        border: 1px solid $btnColorBlack;
+        padding: 2px 18px;
+    }
+}
+
+.header {
+    background-image: url('./image.css/Path-1.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        &.conteiner-md {
+            padding: 18px 15px;
+        }
+        a {
+            @include regularFont;
+            color: $navColor;
+        }
+        .left-nav {
+            a {
+                text-decoration: none;
+                margin-left: 60px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .center-nav {
+        .Landie {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 38px;
+            color: #37447E;
+        }
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        >div {
+            flex: 1;
+        }
+    }
+}
+
+.Landie {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+
+.right-nav a {
+    text-decoration: none;
+    margin-right: 300px;
+}
+
+img.group-1 {
+    float: right;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    .left-bar {
+        margin-top: 300px;
+        margin-left: 160px;
+    }
+    .btn {
+        margin-top: 70px;
+    }
+}
+
+.info h2 {
+    $h2: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+.info p {
+    @include regularFont18;
+    color: $p;
+}
+
+.girl-1 {
+    p {
+        @include regularFont16;
+        color: $colorMainBlue;
+    }
+    .left-bar1 {
+        .df {
+            margin-top: 80px;
+        }
+        .title {
+            img {
+                width: auto
+            }
+            p {
+                @include regularFont12;
+                color: $colorMainGrey;
+            }
+        }
+    }
+}
+
+.girl {
+    p {
+        @include regularFont16;
+        color: $colorMainBlue;
+    }
+    .btn {
+        margin-top: 40px;
+    }
+}
+
+.conteiner-md {
+    width: 1340px;
+    margin: auto;
+    padding: 100px 15px;
+    box-sizing: border-box;
+}
+
+.df {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    >* {
+        flex: 1;
+    }
+}
+
+.footer {
+    background: no-repeat;
+    background-image: url(./image.css/Rectangle-3.png);
+    background-position: center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+    a {
+        text-decoration: none;
+    }
+    .price {
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        margin-top: 230px;
+        p {
+            @include regularFont16;
+            color: $colorMainBlue;
+        }
+        .dolars {
+            margin-top: 35px;
+        }
+        .see-one-price {
+            margin-top: 60px;
+        }
+        .btn {
+            margin-top: 8px;
+        }
+    }
+    .footer-nav {
+        background-image: url(./image.css/Rectangle-4.png);
+        margin-top: 172px;
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 47px;
+        .Landie {
+            text-decoration: none;
+        }
+    }
+    .solid {
+        border-bottom: 1px solid #CDD1D4;
+    }
+    .down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .logo {
+        svg {
+            margin-right: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .conteiner-md {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conteiner-md {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .conteiner-md {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p,
+    h2,
+    .girl,
+    .girl-1 {
+        text-align: center;
+    }
+    .conteiner-md {
+        width: 100%;
+    }
+    .df,
+    .info {
+        flex-direction: column;
+        .left-bar {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}

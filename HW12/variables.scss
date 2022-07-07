@@ -1,0 +1,39 @@
+$btnColorBlack: #111B47;
+$btnColorWhite: #FFFFFF;
+$navColor: #505F98;
+$colorMainBlue: #6F7CB2;
+$colorMainGrey: #5D6970;
+@mixin regularFont() {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin regularFont18() {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@mixin regularFont16() {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin regularFont12() {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+$h2:'Roboto';
+$p:#6F7CB2;
